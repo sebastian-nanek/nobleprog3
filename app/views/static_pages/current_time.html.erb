@@ -1,0 +1,9 @@
+<h1>Aktualny czas</h1>
+
+<p>Aktualny czas: <%= DateTime.now %></p>
+
+<% if is_daytime? %>
+    <img src='https://gfx.radiozet.pl/var/radiozet/storage/images/co-gdzie-kiedy-jak/pierwszy-dzien-wiosny-2020-dlugosc-dnia-i-nocy-20-i-21-marca-2020/948766-1-pol-PL/Pierwszy-dzien-wiosny-2020-dlugosc-dnia-i-nocy-20-i-21-marca-2020_article.jpg'>
+<% else %>
+    <img src='https://static.wikia.nocookie.net/jestem-franky/images/7/72/Noc.jpeg/revision/latest?cb=20200531121003&path-prefix=pl'>
+<% end %>

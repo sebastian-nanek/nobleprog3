@@ -5,7 +5,14 @@ class StaticPagesController < ApplicationController
         elsif params[:lang] == 'es'
             render 'privacy_es'
         else
-            render 'privacy'
+            @privacy_text = Faker::Lorem.paragraphs(number: 6)
         end
+    end
+
+    def current_time
+    end
+
+    def privacy_policy
+        @static_page_content = StaticPage.where(name: 'privacy', lang: params[:lang]).first
     end
 end

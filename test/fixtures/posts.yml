@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  release_year: 1
-  movie: one
+  content: MyText
+  user_id: 1
 
 two:
   title: MyString
-  release_year: 1
-  movie: two
+  content: MyText
+  user_id: 1
